@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <script src="https://kit.fontawesome.com/19ce8a575d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar bg-dark ">
+       <div class="container-fluid">
+          <a class="navbar-brand left">Where in the World?</a>
+          <div class="stress">
+                <button class="user btn btn-dark" id="toggle">
+                  <i class="far fa-moon"></i>
+                  <i class="fas fa-moon"></i>
+                  Dark Mode
+                </button>
+            </div>
+          
+       </div>
+    </nav>
+    <section class="d-flex justify-content-space-between">
+            <div class="fontuser">
+               <input type="text" id="searchBar" placeholder="Search for a country......" style="margin-left: 113px;"> 
+               <i class="fas fa-search" style="margin-left: 113px;"></i>
+            </div>
+            <div class="btn-group align-self-center" style="margin-right: 102px;" id="filter">
+            <button class="btn btn-dark btn-lg" type="button" style="color: gray; font-size: 1.2rem;">
+                Filter by Region
+            </button>
+            <button type="button" class="btn btn-lg btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All</a></li>
+                <li><a class="dropdown-item" href="#">Africa</a></li>
+                <li><a class="dropdown-item" href="#">America</a></li>
+                <li><a class="dropdown-item" href="#">Asia</a></li>
+                <li><a class="dropdown-item" href="#">Europe</a></li>
+                <li><a class="dropdown-item" href="#">Oceania</a></li>
+            </ul>
+        </div>
+    <section>
+        <div class="modal" id="modal">
+            <div>
+                <div class="this-container">
+                    <div class="stress">
+                        <button id="back" class="btn-back">
+                         <i class="fas fa-arrow-left-long"></i>
+                        </button>
+                    </div>
+                    <img src="..." alt="...">
+                   <div class="modal-body">
+                        <h2></h2>
+                        <p>
+                            <strong>Native Name:</strong>
+                        </p>
+                        <p>
+                            <strong>Population:</strong>
+                        </p>
+                        <p>
+                            <strong>Region:</strong>
+                        </p>
+                        <p>
+                            <strong>Sub Region:</strong>
+                        </p>
+                        <p>
+                            <strong>Top Level Domain:</strong>
+                        </p>
+                        <p>
+                            <strong>Currencies:</strong>
+                        </p>
+                        <p>
+                            <strong>Languages:</strong>
+                        </p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section class="country" style="margin-left: 111px; margin-right: 103px;">
+        <div class="row" id="countryLayout">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mx-3">Country Name</h5>
+                        <h6 class="mx-3 mt-3">Polulation:</h6>
+                        <h6 class="mx-3 mt-2">Region:</h6><h6 class="mx-3 mt-2">Capital:</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mx-3">Country Name</h5>
+                        <h6 class="mx-3 mt-3">Polulation:</h6>
+                        <h6 class="mx-3 mt-2">Region:</h6><h6 class="mx-3 mt-2">Capital:</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mx-3">Country Name</h5>
+                        <h6 class="mx-3 mt-3">Polulation:</h6>
+                        <h6 class="mx-3 mt-2">Region:</h6><h6 class="mx-3 mt-2">Capital:</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mx-3">Country Name</h5>
+                        <h6 class="mx-3 mt-3">Polulation:</h6>
+                        <h6 class="mx-3 mt-2">Region:</h6><h6 class="mx-3 mt-2">Capital:</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

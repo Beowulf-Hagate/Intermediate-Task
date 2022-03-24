@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,700&family=Festive&family=Nunito+Sans:ital,wght@0,300;1,300&family=Poppins:wght@500;600&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body.dark{
+    background-color: #2b3743;
+}
+.navbar{
+    height: 70px;
+}
+
+.navbar-brand{
+    margin-right: 100px;
+}
+
+.right{
+    margin-left: 100px;
+}
+
+.left{
+    margin-left: 100px;
+    color: white;
+}
+
+.card{
+    height: 500px;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+}
+/* Assign full width inputs*/ 
+input[type=text] { 
+    width: 30%; 
+    padding: 12px 40px; 
+    margin: 50px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    background-color: black;
+    color: white;
+} 
+
+
+/* Set extra style for the cancel button*/ 
+.container { 
+    padding: 16px; 
+} 
+
+.fontuser {
+    position: relative;
+    width: 100%;
+}
+
+.fontuser i{
+    position: absolute;
+    left: 15px;
+    top: 70px;
+    color: gray;
+}
+
+/* for section button*/
+.btn-group{
+    width: 15%;
+}
+
+/* Navbar Icon */
+.user{
+    font-size: 16px;
+    margin-right: 95px;
+}
+
+.user .fas{
+    display: none;
+}
+
+body.dark .user .fas{
+    display: inline-block;
+}
+
+body.dark .user .far{
+    display: none;
+}
+
+/* Modal Styling */
+.modal{
+    background-color: hsl(0, 0%, 98%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.modal img{
+    width: 600px;
+    margin-top: 70px;
+}
+
+.modal-body{
+    padding: 120px;
+}
+
+.this-container{
+    display: flex;
+    position: relative;
+}
+
+.btn-back{
+    display: flex;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+
+}        
+
+  @media (max-width: 1440px) and (min-width: 1200px){
+    .btn-group {
+       width: 19%;
+    }
+    .card {
+       height: 398px;
+    }
+    .card img {
+      height: 200px;
+    }
+    .user{
+        margin-right: 95px;
+    }
+} 
+
+ @media (max-width: 1024px) and (min-width: 992px){
+    .btn-group {
+      width: 30%;
+    }
+    input[type=text] {
+      width: 37%;
+    }
+    .col-md-3 {
+      width: 33%;
+    }
+    .card {
+      height: 350px;
+    }
+    .user{
+        margin-right: 95px;
+    }
+    .card {
+     height: 460px;
+    }
+} 
+
+@media (max-width: 900px) and (min-width: 768px){
+    .btn-group {
+     width: 49%;
+    }
+    input[type=text] {
+     width: 60%;
+    }
+    .col-md-3 {
+     width: 33%;
+    }
+    .card img {
+     height: 200px;
+    }
+    .card {
+     height: 380px;
+    }
+    .mt-3,
+    .mx-3{
+        margin: none;
+    }
+    .col-md-3 {
+      width: 50%;
+    }
+
+}
+
+@media (max-width: 500px) and (min-width: 320px){
+    .navbar {
+      height: 60px;
+    }
+    element.style {
+     margin-left: 30px;
+    }
+    .left {
+     margin-left: 0;
+    }
+    .navbar-brand {
+     margin-right: 0;
+     margin-left: 0;
+     padding-top: 0;
+     padding-bottom: 0;
+     font-size: 1rem;
+    }
+    .user{
+        margin-right: 8px;
+    }
+
+    input[type=text] {
+     width: 93%;
+     padding: 10px 40px;
+     margin: 21px 9px;
+    }
+    .fontuser i {
+     position: absolute;
+     left: 18px;
+     top: 36px;
+     color: gray;
+    }
+    .d-flex {
+     flex-direction: column;
+    }
+    .fontuser{
+        margin-left: -23%;
+    }
+    
+    element.style {
+     margin-right: 181px;
+     margin-bottom: 30px;
+    }
+    .btn-group {
+     width: 50%;
+     margin-left: -75px;
+     margin-bottom: 30px;
+    }
+    .card {
+      width: 169%;
+      height: 400px;
+}
+    .mb-3 {
+      margin-left: -79px;
+    }
+    .card img {
+      height: 230px;
+    }
+}
+
+
+@media (max-width: 375px) and (min-width: 300px){
+    .btn-group {
+     width: 57%;
+     margin-left: -5px;
+     margin-bottom: 23px;
+    }
+    .fontuser {
+     margin-left: -26%;
+    }
+    .card {
+     width: 192%;
+    }
+    .user{
+     margin-right: 0;
+    }
+    .card img {
+      height: 230px;
+    }
+    
+}
+
+@media (max-width:320px) and (min-width:200px){
+    .fontuser {
+     margin-left: -32%;
+    }
+   .navbar-brand {
+     margin-right: -18px;
+    }
+    .btn-group {
+     width: 66%;
+     margin-left: 21px;
+     margin-bottom: 22px;
+    }
+    .mb-3 {
+     margin-left: -80px;
+    }
+    .card {
+     width: 242%;
+    }
+    .user{
+        margin-right: 0;
+    }
+    .card img {
+      height: 230px;
+    }
+    
+}
+
+
+
+   
